@@ -1,0 +1,28 @@
+
+#eureka 的端口号
+
+server: 
+
+  port: 1111
+
+#eureka的主机名
+
+eureka: 
+
+  instance: 
+
+    hostname: localhost
+
+  client: 
+
+    registerWithEureka: false
+
+    fetchRegistry: false
+
+    serviceUrl: 
+
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+
+   
+
+#eureka的访问地址   
